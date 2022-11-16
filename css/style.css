@@ -1,6 +1,6 @@
 /*1*/
 body {
-    font-family: sans-serif;
+    font-family: sans-serif;/* Меняем шрифт всему тексту */
     background: url(../imag/fon2.jpg) no-repeat;
     background-size: 100%;
 }
@@ -44,7 +44,7 @@ body {
     color: rgba(0, 0, 0, 0.699);
 }
 
-/*10*/
+/*20*/
 .menu__link:hover {
     text-decoration: underline;
 }
