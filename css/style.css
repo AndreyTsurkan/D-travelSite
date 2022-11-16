@@ -1,16 +1,16 @@
 /*1*/
 body {
     font-family: sans-serif;/* Меняем шрифт всему тексту */
-    background: url(../imag/fon2.jpg) no-repeat;
-    background-size: 100%;
+    background: url(../imag/fon2.jpg) no-repeat;/*Вставляю картинку на задний фон и задаю ей свойство чтобы она не повторялась */
+    background-size: 100%;/*Задаю размер картинки заднего фона */
 }
 
 /*10*/
 .anchor__link {
-    position: fixed;
-    top: 90%;
-    right: 1%;
-    z-index: 10;
+    position: fixed; /*Позиционируем свой якорь -картинку и закрепляем */
+    top: 90%; /*Задаем отступ сверху где будет стоять картинка*/
+    right: 1%;/*ЗАдаем отступ справа */
+    z-index: 10;/*Увеличиваем ему индекс . чтобы он был сверху футера*/
 }
 
 /*10*/
@@ -46,7 +46,7 @@ body {
 
 /*20*/
 .menu__link:hover {
-    text-decoration: underline;
+    text-decoration: underline; /*добавляем полосы при наведении на элемент */
 }
 
 /*10*/
@@ -59,51 +59,50 @@ body {
 
 /*10*/
 .travel__wrap {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /*Перебиваю блок в начальную точку по горизонтали */
+    display: flex;  /*Делаем флекс контейнером*/
+    flex-direction: row; /*указываем главной оси движение по горизонтали*/
+    justify-content: space-between;/*Ставлю контент на горизонтально ось с двух сторон */
 }
 
 /*10*/
 .main__title {
-    color: rgb(2, 17, 102);
-    background-color: #f1dfdf3c;
-    width: 100%;
-    text-align: center;
-    margin-top: 7%;
-    font-size: xx-large;
-    font-weight: bolder;
+    color: rgb(2, 17, 102); /*Задаю цвет h1*/
+    background-color: #f1dfdf3c; /*Задаю цвет бэкгрануда этой строке*/
+    width: 100%; /*РАстягиваю бэкграунд на всю ширину строки*/
+    text-align: center; /*указываю положение по центру для h1 */
+    margin-top: 7%;/*Делаю наружный отступ сверху для h1 */
+    font-size: xx-large; /*Задаю размер для h1*/
+    font-weight: bolder; /*Указываю жирность*/
 }
 
 /*10*/
 .travel__img {
     width: 100%;/*задаю ширину каждой картинке */
-    border-radius: 2%;
+    border-radius: 2%; /*Делаю округление острых краев картинки*/
 }
 
 /*10*/
 .travel__item,
 .contact__item {
-    border-radius: 2%;
-    border: 2px solid blanchedalmond;
-    background-color: rgba(221, 249, 249, 0.9);
+    border-radius: 2%;/*Делаю округление острых краев картинки*/
+    border: 2px solid blanchedalmond; /*Указываю толщину границы и цвет границе */
+    background-color: rgba(221, 249, 249, 0.9);/*Указываю цвет бэк фона каждого блока*/
     width: 40%;/*указываю ширину 3-го мейна на старнице search.html*/
-    padding: 3%; /*указіваю внутренний отступ*/
+    padding: 3%; /*указываю внутренний отступ*/
     margin: 3% 5%;/*задаю наружный отступ */
 }
 
 /*10*/
 .contact__wrap {
-    margin-top: 4%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    margin-top: 4%;/*Указываю отступ врапера от */
+    display: flex;/*Делаем флекс контейнером*/
+    flex-direction: row;/*указываем главной оси движение по горизонтали*/
+    justify-content: center;/*Ставлю контент по середине горизонтальной оси */
 
 }
 /*10*/
 .travel__buy {
-    display: flex;/*выравниваем элемепнты так как мне нужно в данном блоке  */
+    display: flex;/*Делаем флекс контейнером*/
     justify-content: flex-end;/*Указываю что на горизонтальной оси контент должен находится в конце*/
     margin-top: 2%;/*Указываю наружный отступот  сверху*/
     color: rgb(65, 183, 187);/*Указываю цвет данному переходу*/
