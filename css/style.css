@@ -15,10 +15,15 @@ body {
 
 /*10*/
 .header {
-    display: flex;/*выравниваем элемепнты так как мне нужно */
-    flex-direction: row;/*Указываю направление по горизонтальной оси */
     justify-content: space-around;/*Контент становится на одинаковом расстоянии друг от друга */
     background-color: rgba(221, 249, 249, 0.9);/*Задаю цвет фона вводного контента*/
+}
+
+.header,
+.travel__wrap,
+.contact__wrap  {
+    display: flex;/*выравниваем элемепнты так как мне нужно */
+    flex-direction: row;/*Указываю направление по горизонтальной оси */
 }
 
 /*10*/
@@ -54,52 +59,59 @@ body {
 .menu {
     display: flex;/*выравниваем элемепнты так как мне нужно */
     align-items: center; /* Указываю что на вертикальной оси контент должен находится по центру*/
-    color: rgba(0, 0, 0, 0.585);/*Задаю цвет */
+    color: rgba(0, 0, 0, 0.585);/*Задаю цвет всем линкам */
+}
+
+/*10*/
+.main__title,
+.contact__information,
+.footer {
+    text-align: center;/*указываю положение по центру текста*/
 }
 
 /*10*/
 .travel__wrap {
-    display: flex;  /*Делаем флекс контейнером*/
-    flex-direction: row; /*указываем главной оси движение по горизонтали*/
     justify-content: space-between;/*Ставлю контент на горизонтально ось с двух сторон */
 }
 
 /*10*/
-.main__title {
-    color: rgb(2, 17, 102); /*Задаю цвет h1*/
-    background-color: #f1dfdf3c; /*Задаю цвет бэкгрануда этой строке*/
+.main__title,
+.travel__img,
+.footer {
     width: 100%; /*РАстягиваю бэкграунд на всю ширину строки*/
-    text-align: center; /*указываю положение по центру для h1 */
+}
+
+/*10*/
+.main__title {
     margin-top: 7%;/*Делаю наружный отступ сверху для h1 */
     font-size: xx-large; /*Задаю размер для h1*/
     font-weight: bolder; /*Указываю жирность*/
+    color: rgb(2, 17, 102); /*Задаю цвет h1*/
+    background-color: #f1dfdf3c; /*Задаю цвет бэкгрануда этой строке*/
 }
 
 /*10*/
 .travel__img {
-    width: 100%;/*задаю ширину каждой картинке */
     border-radius: 2%; /*Делаю округление острых краев картинки*/
 }
 
 /*10*/
 .travel__item,
 .contact__item {
-    border-radius: 2%;/*Делаю округление острых краев картинки*/
-    border: 2px solid blanchedalmond; /*Указываю толщину границы и цвет границе */
-    background-color: rgba(221, 249, 249, 0.9);/*Указываю цвет бэк фона каждого блока*/
     width: 40%;/*указываю ширину 3-го мейна на старнице search.html*/
     padding: 3%; /*указываю внутренний отступ*/
     margin: 3% 5%;/*задаю наружный отступ */
+    background-color: rgba(221, 249, 249, 0.9);/*Указываю цвет бэк фона каждого блока*/
+    border-radius: 2%;/*Делаю округление острых краев картинки*/
+    border: 2px solid blanchedalmond; /*Указываю толщину границы и цвет границе */
 }
 
 /*10*/
 .contact__wrap {
     margin-top: 4%;/*Указываю отступ врапера от */
-    display: flex;/*Делаем флекс контейнером*/
-    flex-direction: row;/*указываем главной оси движение по горизонтали*/
     justify-content: center;/*Ставлю контент по середине горизонтальной оси */
-
 }
+
 /*10*/
 .travel__buy {
     display: flex;/*Делаем флекс контейнером*/
@@ -111,31 +123,28 @@ body {
 /*10*/
 .travel__title,
 .contact__title {
-    color: black;
-    font-weight: bolder;
-    text-decoration: none;
-    margin: 2% 0 ;
-    display: flex;
-    justify-content: center;
+    display: flex;/*Делаем флекс контейнером*/
+    justify-content: center;/*Ставлю контент по середине горизонтальной оси */
+    margin: 2% 0 ;/*Делаю внешние отступы*/
+    font-weight: bolder;/*Задаю жирность текста*/
+    text-decoration: none;/*Убираю нижнее подчеркивание  */
+    color: black;/*Задаю цвет всем титулам  */
 }
 
 /*10*/
 .travel__description {
-    text-indent: 1em;
-    line-height: 1.8;
+    text-indent: 1em;/*Делаю отступ в абзаце */
+    line-height: 1.8;/*Изменяю расстояние*/
 }
 
 /*10*/
 .contact__information {
-    text-align: center;
-    margin-top: 2%;
+    margin-top: 2%;/*Делаю наружный отступ для текста  */
 }
 
 /*10*/
 .footer {
-    width: 100%;
     padding: 1%;/* Делаю отступ cверху *//* Делаю отступ cнизу */
-    text-align: center;/* Ставлю по центру*/
-    color: #888888;/* Задаю цвет  */
     text-transform: capitalize; /* Делаем , что каждое слово начинается с большой буквы */
+    color: #888888;/* Задаю цвет  */
 }
