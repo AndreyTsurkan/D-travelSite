@@ -1,0 +1,124 @@
+body {
+    font-family: sans-serif;
+    background: url(../imag/fon2.jpg) no-repeat;
+    background-size: 100%;
+}
+
+.anchor__link {
+    position: fixed;
+    top: 90%;
+    right: 1%;
+    z-index: 10;
+}
+.header {
+    display: flex;/*выравниваем элемепнты так как мне нужно */
+    flex-direction: row;/*Указываю направление по горизонтальной оси */
+    justify-content: space-around;/*Контент становится на одинаковом расстоянии друг от друга */
+    background-color: rgba(221, 249, 249, 0.9);/*Задаю цвет фона вводного контента*/
+}
+
+.header__logo {
+    width: 13%; /*Задаю ширину картинки и текста по отношению к остальному контенту на вводном элементе*/
+}
+
+.header__picture {
+    width: 70%;/*Задаю ширину картинки на вводной части сайта  */
+}
+
+.menu {
+    justify-content: space-around;/*Контент становится на одинаковом расстоянии друг от друга */
+    width: 28%;/*ЗАдаю ширину переходов на другие страницы */
+    font-weight: bold;/*Делаю их толще*/
+}
+
+.menu__link {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.699);
+}
+
+.menu__link:hover {
+    text-decoration: underline;
+}
+
+
+/*10*/
+.header__link,
+.menu {
+    display: flex;/*выравниваем элемепнты так как мне нужно */
+    align-items: center; /* Указываю что на вертикальной оси контент должен находится по центру*/
+    color: rgba(0, 0, 0, 0.585);/*Задаю цвет */
+}
+
+.travel__wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*Перебиваю блок в начальную точку по горизонтали */
+}
+
+.main__title {
+    color: rgb(2, 17, 102);
+    background-color: #f1dfdf3c;
+    width: 100%;
+    text-align: center;
+    margin-top: 7%;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+/*10*/
+.travel__img {
+    width: 100%;/*задаю ширину каждой картинке */
+    border-radius: 2%;
+}
+
+.travel__item,
+.contact__item {
+    border-radius: 2%;
+    border: 2px solid blanchedalmond;
+    background-color: rgba(221, 249, 249, 0.9);
+    width: 40%;/*указываю ширину 3-го мейна на старнице search.html*/
+    padding: 3%; /*указіваю внутренний отступ*/
+    margin: 3% 5%;/*задаю наружный отступ */
+}
+
+.contact__wrap {
+    margin-top: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+/*10*/
+.travel__buy {
+    display: flex;/*выравниваем элемепнты так как мне нужно в данном блоке  */
+    justify-content: flex-end;/*Указываю что на горизонтальной оси контент должен находится в конце*/
+    margin-top: 2%;/*Указываю наружный отступот  сверху*/
+    color: rgb(65, 183, 187);/*Указываю цвет данному переходу*/
+}
+
+.travel__title,
+.contact__title {
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+    margin: 2% 0 ;
+    display: flex;
+    justify-content: center;
+}
+
+.travel__description {
+    text-indent: 1em;
+    line-height: 1.8;
+}
+
+.contact__information {
+    text-align: center;
+    margin-top: 2%;
+}
+.footer {
+    width: 100%;
+    padding: 1%;/* Делаю отступ cверху *//* Делаю отступ cнизу */
+    text-align: center;/* Ставлю по центру*/
+    color: #888888;/* Задаю цвет  */
+    text-transform: capitalize; /* Делаем , что каждое слово начинается с большой буквы */
+}
