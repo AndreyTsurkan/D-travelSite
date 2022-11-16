@@ -1,15 +1,19 @@
+/*1*/
 body {
     font-family: sans-serif;
     background: url(../imag/fon2.jpg) no-repeat;
     background-size: 100%;
 }
 
+/*10*/
 .anchor__link {
     position: fixed;
     top: 90%;
     right: 1%;
     z-index: 10;
 }
+
+/*10*/
 .header {
     display: flex;/*выравниваем элемепнты так как мне нужно */
     flex-direction: row;/*Указываю направление по горизонтальной оси */
@@ -17,20 +21,24 @@ body {
     background-color: rgba(221, 249, 249, 0.9);/*Задаю цвет фона вводного контента*/
 }
 
+/*10*/
 .header__logo {
     width: 13%; /*Задаю ширину картинки и текста по отношению к остальному контенту на вводном элементе*/
 }
 
+/*10*/
 .header__picture {
     width: 70%;/*Задаю ширину картинки на вводной части сайта  */
 }
 
+/*10*/
 .menu {
     justify-content: space-around;/*Контент становится на одинаковом расстоянии друг от друга */
     width: 28%;/*ЗАдаю ширину переходов на другие страницы */
     font-weight: bold;/*Делаю их толще*/
 }
 
+/*10*/
 .menu__link {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.699);
@@ -85,6 +93,7 @@ body {
     margin: 3% 5%;/*задаю наружный отступ */
 }
 
+/*10*/
 .contact__wrap {
     margin-top: 4%;
     display: flex;
@@ -100,6 +109,7 @@ body {
     color: rgb(65, 183, 187);/*Указываю цвет данному переходу*/
 }
 
+/*10*/
 .travel__title,
 .contact__title {
     color: black;
@@ -110,15 +120,19 @@ body {
     justify-content: center;
 }
 
+/*10*/
 .travel__description {
     text-indent: 1em;
     line-height: 1.8;
 }
 
+/*10*/
 .contact__information {
     text-align: center;
     margin-top: 2%;
 }
+
+/*10*/
 .footer {
     width: 100%;
     padding: 1%;/* Делаю отступ cверху *//* Делаю отступ cнизу */
